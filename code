@@ -1,0 +1,19 @@
+# Nested if statements example
+def get_activity(season):
+    if season.lower() == "winter":
+        return "skiing" if input("Do you like sports? (yes/no) ").lower() == "yes" else "ice fishing"
+    elif season.lower() == "summer":
+        return "swimming" if input("Do you like sports? (yes/no) ").lower() == "yes" else "reading by the beach"
+
+# Nested for loop example
+def print_stars(rows, columns):
+    for i in range(rows):
+        for j in range(columns):
+            print("*", end="")
+        print()
+
+# Example usage
+season_activity = get_activity(input("Do you like winter or summer more? "))
+print(f"Suggested activity: {season_activity}")
+
+print_stars(4, 8)
