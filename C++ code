@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string seasonPreference, activityPreference;
+
+    // Nested If Statements
+    cout << "Do you like winter or summer more? ";
+    cin >> seasonPreference;
+    cout << "Do you like sports or relaxing?[^1^][1] ";
+    cin >> activityPreference;
+
+    if (seasonPreference == "winter" && activityPreference == "sports") {
+        cout << "You should try skiing." << endl;
+    } else if (seasonPreference == "winter" && activityPreference == "relaxing") {
+        cout << "You should try ice fishing." << endl;
+    } else if (seasonPreference == "summer" && activityPreference == "sports") {
+        cout << "You should try swimming." << endl;
+    } else if (seasonPreference == "summer" && activityPreference == "relaxing") {
+        cout << "You should try reading by the beach."[^2^][2] << endl;
+    }
+
+    // Nested For Loops
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 8; ++j) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
